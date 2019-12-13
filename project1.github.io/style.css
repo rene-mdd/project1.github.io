@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+section {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  background-color: orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: miau 1.5s infinite;
+}
+@keyframes miau {
+  0% {
+    transform: translate(0, 10px);
+    width: 30px;
+  }
+  50% {
+    transform: translate(0, 450px);
+    width: 50px;
+    height: 30px;
+  }
+  100% {
+    transform: translate(0, 10px);
+    width: 30px;
+  }
+}
+section:nth-child(2) {
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(white, black);
+}
+.shadow {
+  width: 90px;
+  box-shadow: 1px 10px 5px #423e3e;
+  height: 10px;
+  border-radius: 50%;
+  animation: wao 1.5s infinite;
+}
+
+@keyframes wao {
+  0% {
+    width: 90px;
+  }
+  50% {
+    width: 0px;
+  }
+  100% {
+    width: 90px;
+  }
+}
